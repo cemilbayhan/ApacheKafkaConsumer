@@ -38,11 +38,15 @@ Yukarıdaki kodu ayrı bir terminal ekranına kopyalayıp Enter tuşuna basını
 
 ![](.gitbook/assets/curl.png)
 
-Çıktıda görüldüğü gibi curl ile yapılan post işleminde json olarak gönderilen mesajın çalışan uygulama terminalinde size gösterilmektedir.
+Yukarıdaki komutu yeni bir terminal penceresine yapıştırın ve Enter tuşuna basın.
 
-### 4-) docker-compose.yml Dosyası İle Direk Uygulamayı Ayağa Kaldırma
 
-Aşağıdaki kod bloğunu docker-compose.yml adlı bir dosya oluşturup içine kaydediniz.
+
+Curl ile yapılan POST isteği sonrasında, JSON formatındaki gönderilen mesajın, uygulamanın terminal çıktısında gözüktüğünü görebilirsiniz.
+
+### 4-) Docker-Compose.yml Dosyası İle Uygulamanın Doğrudan Başlatılması
+
+Aşağıdaki kod bloğunu "docker-compose.yml" adlı bir dosya içerisine kaydedin:
 
 ```
 version: '3.3'
