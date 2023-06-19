@@ -18,7 +18,6 @@ Klonladığınız projenin kök dizininde bir "docker-compose.yml" dosyası bulu
 docker-compose up
 ```
 
-![docker-compose up](.gitbook/assets/docker-compose.png)
 
 Bu komutu başarıyla çalıştırdıktan sonra, 80:80 port üzerinden gelen istekleri dinleyen bir uygulamanın başlatıldığını görürsünüz. Şimdi, bir HTTP POST isteği göndermek için curl kullanalım.
 ### 3-) Curl İle HTTP POST İsteği Gönderme
