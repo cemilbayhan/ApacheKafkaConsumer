@@ -11,9 +11,8 @@ git clone git@github.com:cemilbayhan/ApacheKafkaConsumer.git
 ```
 
 
-### 2-) Uygulamanın Docker-Compose İle Ayağa Kaldırılması
-
-İndirdiğiniz dosyanın içerisine girdiğinizde içeride bir adet "docker-compose.yml" dosyası olduğunu görmeniz gerekmektedir. Sonrasında aşağıdaki kodu terminale yapıştırıp işlemlerin tamamlanmasını bekleyiniz.
+###2-) Docker-Compose İle Uygulamanın Başlatılması
+Klonladığınız projenin kök dizininde bir "docker-compose.yml" dosyası bulunmalıdır. Bu dosya ile uygulamayı çalıştırabiliriz. Bunun için, terminalde aşağıdaki komutu kullanın ve işlemin tamamlanmasını bekleyin:
 
 ```
 docker-compose up
@@ -21,9 +20,8 @@ docker-compose up
 
 ![docker-compose up](.gitbook/assets/docker-compose.png)
 
-Yukarıdaki komut sonrasında en son aşağıdaki gibi bir çıktı alacaksınız. Bu 80:80 numaralı porttan gelen mesajların şu anda dinlendiği anlamına gelmektedir. Şimdi curl ile başka bir terminal üzerinden bir post isteği gönderelim.
-
-### 3-) Curl İle Post İsteğinde Bulunma
+Bu komutu başarıyla çalıştırdıktan sonra, 80:80 port üzerinden gelen istekleri dinleyen bir uygulamanın başlatıldığını görürsünüz. Şimdi, bir HTTP POST isteği göndermek için curl kullanalım.
+### 3-) Curl İle HTTP POST İsteği Gönderme
 
 ```
 curl --location --request POST 'http://localhost:8080/send' \
@@ -33,10 +31,6 @@ curl --location --request POST 'http://localhost:8080/send' \
 "title":"Example","description":"Example Description"
 }'
 ```
-
-Yukarıdaki kodu ayrı bir terminal ekranına kopyalayıp Enter tuşuna basınız.
-
-![](.gitbook/assets/curl.png)
 
 Yukarıdaki komutu yeni bir terminal penceresine yapıştırın ve Enter tuşuna basın.
 
