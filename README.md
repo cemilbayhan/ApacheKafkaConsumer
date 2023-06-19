@@ -11,7 +11,7 @@ git clone git@github.com:cemilbayhan/ApacheKafkaConsumer.git
 ```
 
 
-###2-) Docker-Compose İle Uygulamanın Başlatılması
+### 2-) Docker-Compose İle Uygulamanın Başlatılması
 Klonladığınız projenin kök dizininde bir "docker-compose.yml" dosyası bulunmalıdır. Bu dosya ile uygulamayı çalıştırabiliriz. Bunun için, terminalde aşağıdaki komutu kullanın ve işlemin tamamlanmasını bekleyin:
 
 ```
